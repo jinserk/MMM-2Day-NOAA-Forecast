@@ -45,18 +45,38 @@ Module.register('MMM-2Day-NOAA-Forecast', {
       // title
 	    forecastRow1 = document.createElement('tr');
 
-	    forecastToday = document.createElement('th');
-      forecastToday.className = 'forecastTitle';
-	    forecastToday.colSpan = '2';
-	    forecastToday.innerHTML = 'Today';
+      if (this.forecast[0].isDay) {
+	      forecastToday = document.createElement('th');
+        forecastToday.className = 'forecastTitle';
+	      forecastToday.colSpan = '2';
+	      forecastToday.innerHTML = 'Today';
 
-	    forecastTomorrow = document.createElement('th');
-      forecastTomorrow.className = 'forecastTitle';
-	    forecastTomorrow.colSpan = '2';
-	    forecastTomorrow.innerHTML = 'Tomorrow';
+	      forecastTomorrow = document.createElement('th');
+        forecastTomorrow.className = 'forecastTitle';
+	      forecastTomorrow.colSpan = '2';
+	      forecastTomorrow.innerHTML = 'Tomorrow';
 
-	    forecastRow1.appendChild(forecastToday);
-	    forecastRow1.appendChild(forecastTomorrow);
+	      forecastRow1.appendChild(forecastToday);
+	      forecastRow1.appendChild(forecastTomorrow);
+	    }
+	    else {
+	      forecastToday = document.createElement('th');
+        forecastToday.className = 'forecastTitle';
+	      forecastToday.innerHTML = 'Today';
+
+	      forecastTomorrow = document.createElement('th');
+        forecastTomorrow.className = 'forecastTitle';
+	      forecastTomorrow.colSpan = '2';
+	      forecastTomorrow.innerHTML = 'Tomorrow';
+
+	      forecastAfter = document.createElement('th');
+        forecastAfter.className = 'forecastTitle';
+	      forecastAfter.innerHTML = 'Day After';
+
+	      forecastRow1.appendChild(forecastToday);
+	      forecastRow1.appendChild(forecastTomorrow);
+	      forecastRow1.appendChild(forecastAfter);
+	    }
 
       // icons
 	    forecastRow2 = document.createElement('tr');

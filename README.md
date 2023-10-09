@@ -12,12 +12,14 @@ I believe NOAA National Weather Service is the best one with no user registratio
 
 ## Installation
 
-### Under your MagicMirror's `modules` folder, do:
+### Install `MMM-2Day-NOAA-Forecast`
+Under your MagicMirror's `modules` folder, do:
 ```
+cd <your-magic-mirror-path>/modules
 git clone https://github.com/jinserk/MMM-2Day-NOAA-Forecast
 cd MMM-2Day-NOAA-Forecast
 ```
-### Install node dependenties:
+### Install node dependenties
 ```
 npm install
 ```
