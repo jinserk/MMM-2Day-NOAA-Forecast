@@ -114,7 +114,7 @@ Module.register('MMM-2Day-NOAA-Forecast', {
 
 	      // Build up the details regarding temprature
 	      tempIcon = document.createElement('i');
-	      tempIcon.className = 'fa fa-temperature-half fa-fw detailIcon';
+	      tempIcon.className = 'fa ' + ((this.forecast[i].isDay) ? 'fa-temperature-three-quarters' : 'fa-temperature-quarter') + ' fa-fw detailIcon';
 	      tempIcon.setAttribute('height', '15');
 	      tempIcon.setAttribute('width', '15');
 
