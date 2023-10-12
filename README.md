@@ -12,7 +12,7 @@ I believe NOAA National Weather Service is the best one with no user registratio
 
 ## Screenshot
 
-![image](https://github.com/jinserk/MMM-2Day-NOAA-Forecast/assets/823222/af64c0fc-dacb-479e-ae48-5703ce955de9)
+![image](https://github.com/jinserk/MMM-2Day-NOAA-Forecast/assets/823222/09e9bca7-9c45-4f7b-9a73-ad0f742efcde)
 
 ![image](https://github.com/jinserk/MMM-2Day-NOAA-Forecast/assets/823222/d39e42ed-4a63-4008-9487-44f4a64eeac7)
 
