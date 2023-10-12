@@ -1,6 +1,6 @@
 # MMM-2Day-NOAA-Forecast
 
-This is a module for the [MagicMirror](https://github.com/MichMich/MagicMirror/tree/develop).9
+This is a module for the [MagicMirror](https://github.com/MichMich/MagicMirror/tree/develop).
 This module shows a 2-day forecast (today and tomorrow) using the [NOAA National Weather Service](https://www.weather.gov/)
 At the first place I've tried to use [OpenWeather One Call 3.0 API](https://openweathermap.org/api/one-call-3),
 but it shows quite inaccurate forecast result.
