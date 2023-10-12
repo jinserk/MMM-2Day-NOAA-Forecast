@@ -204,14 +204,14 @@ Module.register('MMM-2Day-NOAA-Forecast', {
 
   iconMap: {
     "skc": ["sun", "moon"],
-    "few": ["cloud-sun", "cloud-moon"],
+    "few": ["sun", "moon"],
     "sct": ["cloud-sun", "cloud-moon"],
-    "bkn": ["cloud", "cloud"],
+    "bkn": ["cloud-sun", "cloud-moon"],
     "ovc": ["cloud", "cloud"],
     "wind_skc": ["sun", "moon"],
-    "wind_few": ["cloud-sun", "cloud-moon"],
+    "wind_few": ["sun", "moon"],
     "wind_sct": ["cloud-sun", "cloud-moon"],
-    "wind_bkn": ["cloud", "cloud"],
+    "wind_bkn": ["cloud-sun", "cloud-moon"],
     "wind_ovc": ["cloud", "cloud"],
     "snow": ["snowflake", "snowflake"],
     "rain_snow": ["snowflake", "snowflake"],
