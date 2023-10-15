@@ -1,14 +1,8 @@
 # MMM-2Day-NOAA-Forecast
 
-This is a module for the [MagicMirror](https://github.com/MichMich/MagicMirror/tree/develop).
-This module shows a 2-day forecast (today and tomorrow) using the [NOAA National Weather Service](https://www.weather.gov/). 
-At the first place I've tried to use [OpenWeather One Call 3.0 API](https://openweathermap.org/api/one-call-3),
-but it shows quite inaccurate forecast result.
-There already exists a project called [MMM-NOAA](https://github.com/cowboysdude/MMM-NOAA),
-but this uses not NOAA API but [WeatherBit API](https://www.weatherbit.io/api/weather-forecast-api).
+This is a module for [Magic Mirror 2](https://github.com/MichMich/MagicMirror/tree/develop) that uses the [NOAA National Weather Service](https://www.weather.gov/) forecast to show a two-day forecast (today and tomorrow). Initially, I tried to use the [OpenWeather One Call 3.0 API](https://openweathermap.org/api/one-call-3), but it gives a pretty inaccurate forecast. A project called [MMM-NOAA](https://github.com/cowboysdude/MMM-NOAA) already exists, but it uses the [WeatherBit API](https://www.weatherbit.io/api/weather-forecast-api), not the NOAA API.
 
-I just wanted a reliable weather forecast that will not be changed or discontinued.
-I believe NOAA National Weather Service is the best one with no user registration required (They look being preparing some change for this).
+I just wanted a reliable forecast that doesn't change or go down, and I think the NOAA National Weather Service is the best because it doesn't require user registration and to use APK key currently (although I think they're working on a change for that).
 
 ## Screenshot
 
