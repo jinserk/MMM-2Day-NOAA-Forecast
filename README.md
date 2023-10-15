@@ -2,7 +2,7 @@
 
 This is a module for [Magic Mirror 2](https://github.com/MichMich/MagicMirror/tree/develop) that uses the [NOAA National Weather Service](https://www.weather.gov/) forecast to show a consecutive 4 12-hr forecast. Initially, I tried to use the [OpenWeather One Call 3.0 API](https://openweathermap.org/api/one-call-3), but it gives a pretty inaccurate forecast. A project called [MMM-NOAA](https://github.com/cowboysdude/MMM-NOAA) already exists, but it uses the [WeatherBit API](https://www.weatherbit.io/api/weather-forecast-api), not the NOAA API.
 
-I just wanted a reliable forecast that doesn't change or go down, and I think the NOAA National Weather Service is the best because it doesn't require user registration nor to use APK key currently (although I think they're working on a change for that).
+I just wanted a reliable forecast that doesn't change or go down, and I think the NOAA National Weather Service is the best because it doesn't require user registration nor APK key currently (although I think they're working on a change for that).
 
 ## Screenshot
 
