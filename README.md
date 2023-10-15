@@ -48,4 +48,5 @@ The entry in `config.js` can include the following options:
 },
 ```
 
-
+## Acknowledgement
+This module originates from the code in [MMM-3Day-Forecast](https://github.com/nigel-daniels/MMM-3Day-Forecast). The code and CSS have changed a lot, but all the credit for the layout and skeleton goes to the project.
