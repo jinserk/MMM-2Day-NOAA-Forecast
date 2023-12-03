@@ -1,5 +1,5 @@
 {
-  "name": "MMM-2Day-NOAA-Forecast",
+  "name": "mmm-2day-noaa-forecast",
   "version": "0.1.0",
   "description": "MagicMirror² module for 2-day forcast using NOAA API.",
   "repository": {
@@ -11,10 +11,11 @@
     "smart mirror",
     "weather",
     "forecast",
-    "module"
+    "module",
+    "noaa"
   ],
   "author": "Jinserk Baik",
-  "contributors": "https://github.com/jinserk/MMM-2Day-NOAA-Forecast/graphs/contributors",
+  "contributors": ["https://github.com/jinserk/MMM-2Day-NOAA-Forecast/graphs/contributors"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jinserk/MMM-2Day-NOAA-Forecast/issues"
