@@ -1,6 +1,6 @@
 {
   "name": "mmm-2day-noaa-forecast",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "MagicMirror² module for 2-day forcast using NOAA API.",
   "repository": {
     "type": "git",
