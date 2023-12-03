@@ -7,7 +7,6 @@
 
 const url = require("url");
 const NodeHelper = require("node_helper");
-const date = require("date-fns");
 const axios = require("axios");
 const Log = require("logger");
 

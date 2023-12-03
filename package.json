@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/jinserk/MMM-2Day-NOAA-Forecast#readme",
   "dependencies": {
-    "date-fns": "^2.30.0",
     "axios": "^1.5.1",
     "url": "^0.11.3"
   }
