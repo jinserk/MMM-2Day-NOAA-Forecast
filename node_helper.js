@@ -1,4 +1,4 @@
-/* Magic Mirror Module: MMM-2Day-NOAA-Forecast helper
+/* MagicMirror² Module: MMM-2Day-NOAA-Forecast helper
  * Version: 0.1.0
  *
  * By Jinserk Baik https://github.com/jinserk/
