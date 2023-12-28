@@ -1,5 +1,5 @@
-/* Magic Mirror Module: MMM-2Day-NOAA-Forecast helper
- * Version: 0.1.0
+/* MagicMirror² Module: MMM-2Day-NOAA-Forecast helper
+ * Version: 0.2.0
  *
  * By Jinserk Baik https://github.com/jinserk/
  * MIT Licensed.
@@ -7,8 +7,6 @@
 
 const url = require("url");
 const NodeHelper = require("node_helper");
-const date = require("date-fns");
-const axios = require("axios");
 const Log = require("logger");
 
 module.exports = NodeHelper.create({
@@ -19,13 +17,15 @@ module.exports = NodeHelper.create({
   getWeatherData: function (payload) {
     let _this = this;
 
-    axios
-      .get(payload)
-      .then(function (response) {
-        if (response.status === 200) {
-          var forecast_url = response.data.properties.forecast;
-          _this.getForecastData(payload, forecast_url);
+    fetch(payload)
+      .then(async (response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
         }
+
+        const data = await response.json();
+        const forecastUrl = data.properties.forecast;
+        _this.getForecastData(payload, forecastUrl);
       })
       .catch(function (error) {
         Log.error(error);
@@ -36,19 +36,26 @@ module.exports = NodeHelper.create({
     let _this = this;
     let forecast = [];
 
-    axios
-      .get(url2)
-      .then(function (response) {
-        var data = response.data.properties.periods;
-        if (response.status === 200 && data.length > 4) {
-          forecast = _this.parseData(data);
-          Log.info("Got forecast data from api.weather.gov");
+    fetch(url2)
+      .then(async (response) => {
+        if (response.status === 200) {
+          const data = await response.json();
+          const periods = data.properties.periods;
+
+          if (periods.length > 4) {
+            forecast = _this.parseData(periods);
+            Log.info("Got forecast data from api.weather.gov");
+          } else {
+            Log.error("Got forecast data but something wrong");
+            forecast = _this.fillEmptyData();
+          }
         } else {
-          Log.error("Got forecast data but something wrong");
+          Log.error("Error fetching forecast data:", response.status);
           forecast = _this.fillEmptyData();
         }
       })
       .catch(function (error) {
+        Log.error("Error fetching forecast data:", error);
         forecast = _this.fillEmptyData();
       })
       .finally(function () {
