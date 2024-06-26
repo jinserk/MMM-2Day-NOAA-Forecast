@@ -137,17 +137,18 @@ Module.register("MMM-2Day-NOAA-Forecast", {
 
         let rainBr = document.createElement("br");
 
+        // Removed per https://www.weather.gov/media/notification/pdf_2023_24/scn24-55_api_v1.13.pdf 
         // Build up the details regarding humidity %
-        let humidIcon = document.createElement("i");
-        humidIcon.className = "fa fa-droplet fa-fw detail-icon";
-        humidIcon.setAttribute("height", "15");
-        humidIcon.setAttribute("width", "15");
+        // let humidIcon = document.createElement("i");
+        // humidIcon.className = "fa fa-droplet fa-fw detail-icon";
+        // humidIcon.setAttribute("height", "15");
+        // humidIcon.setAttribute("width", "15");
 
-        let humidText = document.createElement("span");
-        humidText.className = "detail-text";
-        humidText.innerHTML = `${this.forecast[i].humid} %`;
+        // let humidText = document.createElement("span");
+        // humidText.className = "detail-text";
+        // humidText.innerHTML = `${this.forecast[i].humid} %`;
 
-        let humidBr = document.createElement("br");
+        // let humidBr = document.createElement("br");
 
         // Build up the details regarding wind
         let windIcon = document.createElement("i");
@@ -168,9 +169,10 @@ Module.register("MMM-2Day-NOAA-Forecast", {
         forecastDetail.appendChild(rainIcon);
         forecastDetail.appendChild(rainText);
         forecastDetail.appendChild(rainBr);
-        forecastDetail.appendChild(humidIcon);
-        forecastDetail.appendChild(humidText);
-        forecastDetail.appendChild(humidBr);
+        // Removed per https://www.weather.gov/media/notification/pdf_2023_24/scn24-55_api_v1.13.pdf 
+        // forecastDetail.appendChild(humidIcon);
+        // forecastDetail.appendChild(humidText);
+        // forecastDetail.appendChild(humidBr);
         forecastDetail.appendChild(windIcon);
         forecastDetail.appendChild(windText);
 
