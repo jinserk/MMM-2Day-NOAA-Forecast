@@ -81,7 +81,8 @@ module.exports = NodeHelper.create({
         pop: element.probabilityOfPrecipitation.value
           ? element.probabilityOfPrecipitation.value
           : 0,
-        humid: element.relativeHumidity.value,
+        // Removed per https://www.weather.gov/media/notification/pdf_2023_24/scn24-55_api_v1.13.pdf 
+        // humid: element.relativeHumidity.value,
         wspd: element.windSpeed
           .replace("to ", "")
           .split(" ")
@@ -126,7 +127,8 @@ module.exports = NodeHelper.create({
         conditions: "No weather data",
         temp: "--",
         pop: "--",
-        humid: "--",
+        // Removed per https://www.weather.gov/media/notification/pdf_2023_24/scn24-55_api_v1.13.pdf 
+        // humid: "--",
         wspd: ["--"],
         wdir: "--"
       });
