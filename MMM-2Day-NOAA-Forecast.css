@@ -52,3 +52,15 @@
   font-size: 14px;
   margin-left: 5px;
 }
+
+.mmm-2day-noaa-forecast-min-temp {
+  color: #bcddff;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.mmm-2day-noaa-forecast-max-temp {
+  color: #ff8e99;
+  font-weight: 700;
+  font-size: larger;
+}
